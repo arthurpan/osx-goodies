@@ -322,7 +322,7 @@ bool SASMegaRAID::Attach()
 #define MRAID_POWER_SLEEP 0
 #define MRAID_POWER_ACTIVE 1
         {1, kIOPMSleep, kIOPMSleep, kIOPMSleep, 0, 0, 0, 0, 0, 0, 0, 0},
-        {1, IOPMPowerOn | kIOPMInitialDeviceState, kIOPMPowerOn, kIOPMPowerOn, 0, 0, 0, 0, 0, 0, 0, 0}
+        {1, IOPMPowerOn, kIOPMPowerOn, kIOPMPowerOn, 0, 0, 0, 0, 0, 0, 0, 0}
     };
     
     DbgPrint("%s\n", __FUNCTION__);
